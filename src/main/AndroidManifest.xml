@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alatheer.esteraha">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo5"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".FeeManagement.Register_mortag3"></activity>
+        <activity android:name=".FeeManagement.Register_esal" />
+        <activity android:name=".FeeManagement.FeeHome" />
+        <activity android:name=".MasrofatManagement.AddMasrof"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".ReportsManagement.Reports" />
+        <activity android:name=".ReportsManagement.ReportsManagements" />
+        <activity android:name=".RestsManagement.AddRestActivity" />
+        <activity android:name=".RestsManagement.AllRestsActivity" ></activity>
+        <activity android:name=".RestsManagement.RestsManagementHome" />
+        <activity android:name=".ClientsManagements.AllClients" />
+        <activity android:name=".ClientsManagements.Clients_Home" />
+        <activity android:name=".Home.HOME" />
+        <activity android:name=".TemporaryHogozat.TemporaryHogozat" />
+        <activity android:name=".Orders.RefusedOrders" />
+        <activity android:name=".Orders.AcceptedOrders" />
+        <activity android:name=".Orders.Orders" />
+        <activity android:name=".DayHogozat.HogozatDay" />
+        <activity android:name=".All_Hogozat.AllHogozat" />
+        <activity android:name=".Reservation_Management.SearchActivity" />
+        <activity android:name=".Book_Rest.BookRest" />
+        <activity android:name=".Reservation_Management.Resevation_Management_Home" />
+        <activity android:name=".Authentication.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ClientsManagements.Registeration" />
+        <activity android:name=".Authentication.LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FeeManagement.ReservationDetails" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.alatheer.esteraha.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

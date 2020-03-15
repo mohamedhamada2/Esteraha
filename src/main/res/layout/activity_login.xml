@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Authentication.LoginActivity"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#052079"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تسجيل الدخول"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:id="@+id/toolbar_title"
+                android:fontFamily="@font/myfontmedium"/>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_marginTop="50dp"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/logo2"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/toolbar"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/txt_login"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:hint="اسم المستخدم"
+            android:fontFamily="@font/myfontmedium"
+            android:layout_below="@+id/logo_img"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/txt_login"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="كلمة المرور"
+            android:fontFamily="@font/myfontmedium"
+            android:layout_below="@+id/edit_user_name"
+            android:gravity="center"/>
+        <Button
+            android:onClick="AddUser"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_login"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:text="تسجيل الدخول "
+            android:fontFamily="@font/myfontmedium"
+            android:layout_below="@+id/edit_password"
+            android:textColor="@android:color/white"/>
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</ScrollView>
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportsManagement.masrofat">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/relative_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:id="@+id/txt_reservation_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/myfontbold"
+                android:text="تقرير الايرادات"
+                android:textColor="@color/background"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/ic_menu" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/relative_from_date"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/txt_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp">
+        <TextView
+            android:id="@+id/txt_from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="من تاريخ"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/myfontmedium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/img_from_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_expand_more_black_24dp"
+            android:onClick="GetFromDate"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative_to_date"
+        android:layout_below="@+id/relative_from_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/txt_login"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp">
+        <TextView
+            android:id="@+id/txt_to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="الي تاريخ"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/myfontmedium"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/img_to_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:onClick="GetToDate"
+            android:background="@drawable/ic_expand_more_black_24dp"
+            tools:ignore="OnClick" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relative_to_date"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="بحث"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/myfontmedium"
+        android:onClick="search"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_masrofat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_search"
+        android:layout_margin="20dp">
+    </androidx.recyclerview.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="invisible"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".FeeManagement.FeeHome">
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:id="@+id/relative_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_arrow_back"
+                        android:onClick="BACK"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/myfontmedium"
+                        android:text="ادراة الرسوم والتحصيل"
+                        android:textColor="@color/background"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/img_menu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/ic_menu"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="250dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/botton_2"
+                    android:text="تسجيل ايصال"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/myfontmedium"
+                    android:textColor="@color/white"
+                    android:onClick="Register_esal"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/botton_2"
+                    android:layout_marginTop="20dp"
+                    android:text="تسجيل مرتجع"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/myfontmedium"
+                    android:textColor="@color/white"
+                    android:onClick="Register_mortg3"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemTextColor="@color/colorPrimary"
+        android:layout_gravity="end"
+        app:headerLayout="@layout/navigation_drawer_layout"
+        android:background="@color/white"/>
+</androidx.drawerlayout.widget.DrawerLayout>

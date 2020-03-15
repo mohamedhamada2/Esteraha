@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Esteraha</string>
+    <string name="rests">RESTS</string>
+    <string name="booked">booked</string>
+    <string name="unbooked">unbooked</string>
+    <string name="home">Home</string>
+    <string name="rest_details">Rest Details:</string>
+    <string name="rest_no">Rest no:</string>
+    <string name="rest_name">Rest name:</string>
+    <string name="rest_address">Rest Address:</string>
+    <string name="hour_price">Hour Price</string>
+    <string name="name_req">name is required</string>
+    <string name="pass_req">password is required</string>
+    <string name="national_num">national num</string>
+    <string name="client_name">Client name</string>
+    <string name="num_of_days">Num of days</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="phone">Phone</string>
+    <string name="total">Total Value</string>
+    <string name="paid">Paid</string>
+    <string name="remain">Remain value</string>
+    <string name="discount">Discount</string>
+    <string name="discount_value">Discount Value</string>
+    <string name="book">Book</string>
+    <string name="previous_reservation">Previous Reservation</string>
+    <string name="all_reservation">All Reservation</string>
+    <string name="temporary_reservation">Temporary Reservation</string>
+    <string name="daily_reservation">Daily Reservation</string>
+    <string-array name="reserved_array">
+        <item>"yes"</item>
+        <item>"no"</item>
+    </string-array>
+    <string-array name="discount_array">
+        <item>"No"</item>
+        <item>"yes"</item>
+    </string-array>
+    <string-array name="payment_array">
+        <item>"نقدي"</item>
+        <item>"شبكة"</item>
+        <item>"تحويل"</item>
+    </string-array>
+    <string-array name="reservation_array">
+        <item>"مؤكد"</item>
+        <item>"مؤقت"</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_orders">All Orders</string>
+    <string name="accepted_order">Accepted Orders</string>
+    <string name="refused_order">Refused Orders</string>
+    <string name="incomingorder">incoming Orders</string>
+    <string name="print">طباعة</string>
+    <string name="cancel">الغاء</string>
+    <string name="reserve_type">Reserve Type</string>
+    <string name="payment">Payment method</string>
+    <string name="reservation_today">Reservation Today</string>
+    <string name="tamen">Tamen</string>
+    <string name="Search_for_clients">Search for clients</string>
+    <string name="rest_price">Rest Price:</string>
+    <string name="employee">Employee</string>
+    <string name="esal_num">Esal num</string>
+    <string name="esal_date">Esal Date</string>
+    <string name="total_value">Total</string>
+    <string name="esal_value">Esal Value</string>
+    <string name="rest_num">Rest Num</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="date_of_exchange">Date</string>
+    <string name="category">category</string>
+    <string name="book_details">Book Details</string>
+    <string name="available_rest">the rest is not available in that day</string>
+    <string name="ok">OK</string>
+    <string name="status">Status</string>
+    <string name="accept">Accept</string>
+    <string name="refuse">Refuse</string>
+    <string name="confirm_hagz">Confirm Reservation</string>
+    <string name="reservation_management">Reservation Management</string>
+    <string name="client_managements">Clients Management</string>
+    <string name="add_client">Add Client</string>
+    <string name="all_clients">All Clients</string>
+    <string name="discount_orders">Discounts</string>
+    <string name="reservation">Reservation</string>
+    <string name="book_rest">Book Rest</string>
+    <string name="main_setting">Main Settings</string>
+    <string name="reports">Reports</string>
+    <string name="expenses">Expenses Managements</string>
+    <string name="fees_and_collection">Fees and Collection</string>
+    <string name="rest_management">Rest Management</string>
+    <string name="add_rest">Add Rest</string>
+    <string name="all_rests">All Rests</string>
+    <string name="entry_time">Entry Time</string>
+    <string name="out_time">Out Time</string>
+    <string name="earns_reports">Earns Reports</string>
+    <string name="expenses_reports">Expenses Reports</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="Search">Search</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="logout">Logout</string>
+    <string name="book_before">Book Before</string>
+    <string name="save">Save</string>
+    <string name="reservation_type">Reservation Type</string>
+    <string name="from_date">from Date</string>
+    <string name="to_date">to Date</string>
+</resources>

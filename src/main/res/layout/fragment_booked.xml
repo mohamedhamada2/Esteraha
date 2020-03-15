@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Reservation_Management.Fragments.AllReservations.AllReservation"
+    android:gravity="center">
+    <ImageButton
+        android:id="@+id/btn_temporary_order"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/day"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/myfontmedium"
+        android:text="@string/temporary_reservation"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="5dp">
+            <ImageButton
+                android:id="@+id/btn_hagz_day"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/day" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_reservation"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/myfontmedium"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="5dp">
+            <ImageButton
+                android:id="@+id/btn_all_hagz"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/all" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/previous_reservation"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/myfontmedium"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

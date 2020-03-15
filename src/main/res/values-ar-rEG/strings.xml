@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Esteraha</string>
+    <string name="rests">الاستراحات</string>
+    <string name="booked">محجوزة</string>
+    <string name="unbooked">غير محجوزة</string>
+    <string name="home">الرئيسية</string>
+    <string name="rest_details">تفاصيل الاستراحة</string>
+    <string name="rest_no">رقم الاستراحة:</string>
+    <string name="rest_name">اسم الاستراحة:</string>
+    <string name="rest_address">عنوان الاستراحة:</string>
+    <string name="hour_price">سعر الساعة:</string>
+    <string name="name_req">مطلوب ادخال اسم المستخدم </string>
+    <string name="pass_req">مطلوب ادخال كلمة المرور </string>
+    <string name="national_num">رقم الهوية</string>
+    <string name="client_name">اسم العميل</string>
+    <string name="num_of_days">عدد الايام</string>
+    <string name="start_date">بداية الحجز</string>
+    <string name="end_date">نهاية الحجز</string>
+    <string name="phone">الهاتف</string>
+    <string name="total">الاجمالي</string>
+    <string name="paid">المدفوع</string>
+    <string name="remain">الباقي</string>
+    <string name="discount">الخصم</string>
+    <string name="discount_value">قيمة الخصم</string>
+    <string name="book">احجز</string>
+    <string name="previous_reservation">حجوزات سابقة</string>
+    <string name="all_reservation">جميع الحجوزات</string>
+    <string name="temporary_reservation">الحجوزات المؤقتة</string>
+    <string name="daily_reservation">حجوزات اليوم</string>
+    <string name="all_orders">جميع الطلبات</string>
+    <string name="accepted_order">الطلبات المقبولة</string>
+    <string name="refused_order">الطلبات المرفوضة</string>
+    <string name="incomingorder">الطلبات الواردة</string>
+    <string name="print">طباعة</string>
+    <string name="cancel">الغاء</string>
+    <string name="reserve_type">نوع الحجز</string>
+    <string name="payment">طريقة الدفع</string>
+    <string name="reservation_today">حجوزات اليوم</string>
+    <string name="tamen">تأمين</string>
+    <string name="Search_for_clients">ابحث عن عميل</string>
+    <string name="rest_price">سعر الاستراحة:</string>
+    <string name="employee">الموظف</string>
+    <string name="esal_num">رقم الايصال</string>
+    <string name="esal_date">تاريخ الايصال</string>
+    <string name="total_value">الاجمالي</string>
+    <string name="esal_value">قيمة الايصال</string>
+    <string name="rest_num">Rest Num</string>
+    <string name="update">تعديل</string>
+    <string name="delete">حذف</string>
+    <string name="date_of_exchange">تاريخ الصرف</string>
+    <string name="category">فئة المصروف</string>
+    <string name="book_details">تفاصيل الحجز</string>
+    <string name="available_rest">الاستراحة غير متاحة في هذا اليوم</string>
+    <string name="ok">موافق</string>
+    <string name="status">الحالة</string>
+    <string name="accept">قبول</string>
+    <string name="refuse">رفض</string>
+    <string name="confirm_hagz">تاكيد الحجز</string>
+    <string name="reservation_management">ادارة الحجز</string>
+    <string name="client_managements">ادارة العملاء</string>
+    <string name="add_client">اضافة عميل</string>
+    <string name="all_clients">جميع العملاء</string>
+    <string name="discount_orders">طلبات التخفيض</string>
+    <string name="reservation">الحجوزات</string>
+    <string name="book_rest">حجز استراحة</string>
+    <string name="main_setting">الاعدادات الرئيسية</string>
+    <string name="reports">التقارير</string>
+    <string name="expenses">ادارة المصروفات</string>
+    <string name="fees_and_collection">الرسوم والتحصيل</string>
+    <string name="rest_management">ادارة الاستراحات</string>
+    <string name="add_rest">اضافة استراحة</string>
+    <string name="all_rests">جميع الاستراحات</string>
+    <string name="entry_time">وقت الدخول</string>
+    <string name="out_time">وقت الخروج</string>
+    <string name="earns_reports">تقارير الايرادات</string>
+    <string name="expenses_reports">تقارير المصروفات</string>
+    <string name="from">من تاريخ</string>
+    <string name="to">الي تاريخ</string>
+    <string name="Search">بحث</string>
+    <string name="date">التاريخ</string>
+    <string name="amount">القيمة</string>
+    <string name="add_expense">اضافة مصروف</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="book_before">هل سبق لك الحجز</string>
+    <string name="save">حفظ</string>
+    <string name="reservation_type">Reservation Type</string>
+    <string name="from_date">من تاريخ</string>
+    <string name="to_date">الي تاريخ</string>
+    <string-array name="reserved_array">
+        <item>"نعم"</item>
+        <item>"لا"</item>
+    </string-array>
+    <string-array name="discount_array">
+        <item>"لا"</item>
+        <item>"نعم"</item>
+    </string-array>
+    <string-array name="payment_array">
+        <item>"نقدي"</item>
+        <item>"شبكة"</item>
+        <item>"تحويل"</item>
+    </string-array>
+    <string-array name="reservation_array">
+        <item>"مؤكد"</item>
+        <item>"مؤقت"</item>
+    </string-array>
+</resources>
