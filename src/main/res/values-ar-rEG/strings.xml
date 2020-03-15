@@ -22,6 +22,7 @@
     <string name="paid">المدفوع</string>
     <string name="remain">الباقي</string>
     <string name="discount">الخصم</string>
+
     <string name="discount_value">قيمة الخصم</string>
     <string name="book">احجز</string>
     <string name="previous_reservation">حجوزات سابقة</string>
