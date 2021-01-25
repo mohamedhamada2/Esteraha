@@ -33,7 +33,7 @@ public class Api {
             retrofit = new Retrofit.Builder()
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create(gson))
-                    .baseUrl("http://estrahat.fpalatheer.xyz/")
+                    .baseUrl("https://alatheer.online/estrahat/")
                     .build();
 
         }
